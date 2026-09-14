@@ -1,0 +1,37 @@
+/* .outer > ul > li{
+  background-color: aquamarine;
+}
+
+.box[name="hello-world"]{background-color: red;}
+
+#target03 + div{background-color: green;}
+#target03 ~ div{background-color: green;}
+
+#target03:hover{background-color: green;}
+#target03:active{background-color: green;} */
+
+input[name="hobby"]:checked{
+  width: 50px;
+  height: 50px;
+}
+
+input[name="nickname"]:focus{
+  background-color: green;
+}
+
+.outer > div:nth-child(1){background-color: red;}
+.outer > div:not(:nth-child(1)){background-color: bisque;}
+
+p::first-letter{background-color: yellow;}
+p::first-line{background-color: green;}
+p::selection{background-color: orange;}
+
+p::before{
+  content: 'blow';
+  background-color: brown;
+}
+
+p::after{
+  content: 'job';
+  background-color: aqua;
+}

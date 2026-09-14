@@ -1,0 +1,34 @@
+/* 대상 지정 */
+
+/* h1, div{
+  background-color: red;
+}
+
+body{
+  background-color: blue;
+}
+
+html{
+  background-color: green;
+}
+
+.box{
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+}
+
+.bg-red{background-color: red;}
+.bg-violet{background-color: violet;}
+.bg-blue{background-color: blue;}
+
+#target02{
+  width: 200px;
+  height: 200px;
+}
+
+/* 전체 지정 */
+
+/* *{
+  background-color: red;
+} */

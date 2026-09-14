@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>폼관련태그</title>
+</head>
+<body>
+  <h1>폼관련태그</h1>
+
+  <hr />
+
+    <!--  
+      <form> 태그
+          form 태그는 html에서 사용자가 입력할 수 있는 양식을 제공하는 태그이다.
+          form 태그 내의 <input> 태그들을 통해서 사용자가 입력한 정보를 서버로 넘기면서 요청하는 역할을 한다.
+
+      * 속성
+          action : 폼 내에 입력된 값들을 전달할 서버에 대한 내용을 기입한다.
+          method : get / post 방식으로 전송 방식을 지정한다.
+              get : 서버에 사용자가 입력한 값들을 URL에 노출시켜서 전달하는 방식
+              post : 서버에 사용자가 입력한 값들을 URL에 노출시키지 않고 전달하는 방식
+          autocomplete : 이전 입력 내용을 출력하는 기능(default : on, 각 태그별로 지정 가능)
+  -->
+
+  <form action="Naver" method="get">
+    <label>ID : </label>
+    <input type="text"
+    placeholder="특수기호, 알파벳 혹은 한글을 포함한 4~12글자"
+    name="User ID"
+    value="user01"
+    readonly="true">
+    <br />
+    <label>PASSWORD : </label>
+    <input type="password"
+    name="User Password">
+    <br />
+
+    <label>NickName : </label>
+    <input type="text" name="nickname"
+    maxlength="20" placeholder="최대 20글자"
+    required="true">
+
+    <br />
+
+    <input type="search">
+    <input type="url">
+    <input type="email">
+
+    <br />
+
+    <input type="number">
+    <input type="phone">
+    <!-- 모바일에서 봤을 때 입력칸 키보드가 번호 입력으로 바로 보여짐 -->
+    <input type="tel">
+
+    <br />
+
+    <input type="range" min="0" max="100" step="20">
+
+    <br />
+    
+    <input type="date">
+    <input type="month">
+    <input type="week">
+    <input type="time">
+    <input type="datetime-local">
+
+    <br />
+
+    <input id="target01" type="radio" name="gender" value="male">
+    <label for="target01">Man</label>
+    <label>
+    <input type="radio" name="gender" value="female">
+    Woman
+  </label>
+
+    <br />
+
+    <label>
+      <input type="checkbox" name="hobby">
+      book
+    </label>
+
+    <label>
+      <input type="checkbox" name="hobby">
+      game
+    </label>
+
+    <label>
+      <input type="checkbox" name="hobby">
+      movie
+    </label>
+
+    <br />
+
+    <input type="color">
+    <br />
+    <input type="file" multiple accept=".jpg.png">
+    
+    <br />
+
+    <input type="hidden" name="target" value="0">
+
+    <br />
+
+    <select name="national">
+      <optgroup label="Asia">
+        <option value="ko">korea</option>
+        <option value="jp">japan</option>
+        <option value="ch">china</option>
+      </optgroup>
+
+      <optgroup label="Europe">
+        <option value="fr">France</option>
+        <option value="gr">Germany</option>
+        <option value="en">england</option>
+      </optgroup>
+    </select>
+
+    <br />
+
+    <progress></progress>
+    <br />
+    <meter min="0" max="100" value="80" low="25" high="75"></meter>
+    <br />
+    <textarea name="content"></textarea>
+
+    <br />
+
+    <button>Button Tag</button>
+    <button type="button">Off Tag</button>
+    <input type="button" value="Just button">
+    <input type="submit" value="Log-In">
+    <input type="reset" value="다시 입력">
+
+  </form>
+</body>
+</html>
