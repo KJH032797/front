@@ -1,0 +1,13 @@
+div.user-info label{
+  font-weight: bold;
+}
+
+div.user-info label{
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+
+div.user-info input{
+  width: 250px;
+}

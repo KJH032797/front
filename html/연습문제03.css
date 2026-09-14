@@ -1,0 +1,16 @@
+tr[name="head"] {background-color: aqua;}
+
+tr[name="list"] {
+  background-color: rgb(255, 68, 0);
+  font-weight: bold;
+  text-align: center;
+}
+
+tr[name="content"] {background-color: orange;}
+
+tr[name="sum"] :first-child{
+  background-color: rgb(255, 68, 0);
+  font-weight: bold;
+  text-align: center;
+}
+tr[name="sum"] :not(:first-child){background-color: yellow;}

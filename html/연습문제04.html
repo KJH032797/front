@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>연습문제04</title>
+</head>
+<body>
+  <h1>주문하기</h1>
+
+  <label>고객명 : </label>
+  <input type="text" name="name">
+  <br />
+  <br />
+  <label>전화번호 : </label>
+  <input type="tel" name="phone">
+  <br />
+  <br />
+  <label>E-mail : </label>
+  <input type="email" name="email">
+
+  <hr />
+
+  <h3>피자사이즈</h3>
+  <input type="radio" name="size" value="small"> Small
+  <br />
+  <br />
+  <input type="radio" name="size" value="medium"> Medium
+  <br />
+  <br />
+  <input type="radio" name="size" value="large"> Large
+
+  <hr />
+
+  <h3>토핑선택</h3>
+  <input type="checkbox" name="topping" value="베이컨"> 베이컨
+  <br />
+  <br />
+  <input type="checkbox" name="topping" value="치즈"> 치즈
+  <br />
+  <br />
+  <input type="checkbox" name="topping" value="양파"> 양파
+  <br />
+  <br />
+  <input type="checkbox" name="topping" value="버섯"> 버섯
+  
+  <br />
+  
+  <label>희망 배송 시간 : </label>
+  <input type="time" name="delivery_time">
+  <br />
+  <br />
+  <label>배송 시 요청사항 : </label>
+  <textarea name="request" cols="25" rows="4"></textarea>
+
+  <br />
+  <br />
+
+  <button>주문하기</button>
+
+</body>
+</html>
