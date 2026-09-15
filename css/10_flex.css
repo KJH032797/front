@@ -1,0 +1,44 @@
+.outer{
+  width: 500px;
+  height: 500px;
+  border: 3px solid black;
+
+  display: flex;
+  justify-content: space-around;
+  /* center, space-~~~, start, end, stretch 등*/
+  align-items: stretch;
+  /* center, start, end, stretch 등 */
+  flex-direction: row;
+  /* column, row-reverse 등 */
+  flex-wrap: wrap;
+  align-content: space-evenly;
+  /* center, space-~~~, start, end, stretch 등*/
+}
+
+.inner{
+  width: 100px;
+  height: 100px;
+  border: 1px dashed gray;
+}
+
+/* .inner:nth-child(2){
+  align-self: end;
+} */
+
+.container{
+  width: 500px;
+  height: 500px;
+  border: 5px solid red;
+
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: row-reverse;
+
+}
+
+.item{
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+}
