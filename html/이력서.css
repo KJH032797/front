@@ -1,0 +1,58 @@
+
+
+h1{
+  text-align: center;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+}
+
+/* table{margin: 0 auto} */
+
+h2{
+  width: 900px;
+  margin: 0 auto;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+}
+
+.photo{width: 100px;}
+
+.photo input{width: 80px;}
+
+table[name="career"] tr:nth-child(1){
+  text-align: center;
+}
+
+table[name="career"] tr:not(:first-child){
+  td:not(:nth-child(3)){text-align: center;}
+}
+
+table[name="career"] td:nth-child(1){width: 30%;}
+table[name="career"] td:nth-child(2){width: 25%;}
+table[name="career"] td:nth-child(3){width: 45%;}
+
+table[name="participating"]{
+  text-align: center;
+  table-layout: fixed;
+}
+
+textarea{
+  font-family: 고딕체;
+  font-weight: 400;
+  font-size: 15px;
+  padding-left: 10px;
+  display: block;
+  margin: 0 auto
+
+}
+
+.c-head{font-weight: bold;}
